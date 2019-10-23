@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/drag-drop-classes.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto:400,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+        <h1 class="greeting" style="letter-spacing: 3px;">Drag and Drop</h1>
+        <!-- <i class="fa fa-book" style="text-align: center; font-size:22px;"></i> -->
+    </header>
+
+
+    <!-- #region dragdrop -->
+    <div class="empty">
+        <div class="fill" draggable="true"></div>
+    </div>
+    <div class="empty">
+
+    </div>
+    <div class="empty">
+
+    </div>
+    <div class="empty">
+
+    </div>
+    <div class="empty">
+
+    </div>
+    <!-- #endregion dragdrop -->
+
+    <div id="output-container " class="conatiner">
+        <h2 class="greeting"  style="text-align:center;">Event Stats</h2>
+        <div class="row stats">
+            <div id="stat-one" onclick="logEventType()">
+                Event type:
+            </div>
+            <div id="stat-two">
+                Drag Start:
+            </div>
+            <div id="stat-three">
+                Coordinates:
+            </div>
+
+        </div>
+        <div class="triangle">
+
+        </div>
+    </div>
+
+
+    <div id="upload-widget" class="container upload-container">
+
+
+        <h3>File Uploader</h3>
+
+        <input type="file" name="" id="" disabled />
+        <textarea name="" id="" cols="30" rows="10" disabled>
+
+
+        </textarea>
+    </div>
+
+
+    <footer class="page-footer grey grey-darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <div class="social-icon-bar">
+                        <a href="#" class="facebook"><i class="fa fa-reddit"></i></a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google"></i></a>
+
+                        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Main Links</h5>
+                    <ul class="footer-links">
+                        <li><a class="grey-text text-lighten-3" href="javascript:void(0)">home</a></li>
+                        <li><a class="text-lighten-3" href=""></a>components</a></li>
+
+
+                        <li><a class="grey-text text-lighten-3 waves-effect" href="">content</a></li>
+                        <li><a class="grey-text text-lighten-3 waves-effect" href="#!">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019
+                <a class="grey-text text-lighten-4 right" href="javascript:void(0)">Home Page</a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="dragdrop.js"></script>
+</body>
+
+</html>

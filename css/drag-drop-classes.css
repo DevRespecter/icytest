@@ -1,0 +1,59 @@
+@import url("page-styles.css");
+/* importing page specific styles */
+
+
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+*{
+    margin:0;
+    padding:0;
+
+}
+html,body{
+    min-height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.fill{
+    background-image: url('https://picsum.photos/id/57/200/200');
+    position: relative;
+
+    height:200px;
+    width:200px;
+    top: 5px;
+    left: 5px;
+    border:1px solid red;
+}
+
+.empty{
+    text-align: center;
+    display: inline-block;
+    /* Need space around image container, box, for drag and drop to look nice */
+    height:210px;
+    width:210px;
+    margin-right: 20px; 
+    margin-left:100px;
+    background-color: #fff;
+    border:1px solid red;
+    
+}
+
+/* .hold: while the item is being dragged */
+.hold{
+    border: 3px solid cyan;
+}
+
+/* hover over empty boxes */
+.hovered{
+    background-color: #ccc;
+    border-style: groove;
+}
+
+.invisible{
+    display:none;
+}

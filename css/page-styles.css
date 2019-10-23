@@ -1,0 +1,143 @@
+header{
+    box-sizing: border-box;
+    padding-top:3rem;
+    padding-bottom:3.5rem;
+    width:100vw;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom:100px;
+    background-color: #eee;
+    border-bottom:2px double #000;
+   
+    border-image-source: linear-gradient(90deg,  rgba(25, 233, 233, 0.99), rgba(0, 0, 0, 0.9));
+    border-image-slice: 2;
+    font-family: 'Arvo', serif;
+    
+}
+
+.greeting {
+
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.greeting::first-letter{
+    font-weight: bolder;
+    font-size: 101%;
+}
+ h2::first-letter {
+    font-weight: bolder;
+    font-size: 101%;
+    border-bottom: 2px solid rgba(25, 233, 233, 0.79);
+   
+}
+
+
+
+.stats {
+   background-color: #fff;
+   color: #232;
+   width:80vw;
+   margin-bottom: 30px;
+   padding:2rem;
+   border-bottom:10px solid;
+   border-color: #000;
+   border-image-source: linear-gradient(45deg, rgba(0,0,0,0.99), rgba(25, 233, 233, 0.99));
+   border-image-slice: 100 100;
+   font-size: 1.6rem;
+}
+.triangle{
+    position: relative;
+  
+    width: 0;
+    height: 0;
+    margin-left:10%;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #292929 transparent transparent transparent;
+}
+
+.upload-container{
+    margin-bottom:150px;
+}
+
+
+
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.floating-icon-bar{
+    /* for fixed(resuable) */ 
+     position: fixed;
+    top: 35%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.floating-icon-bar a{
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+/* Style the icon bar links 
+
+-------------------------
+social and floating icon bars
+used in : dragdrop.html ONLY */
+footer {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    background-color: #ccc;
+    justify-content: center;
+    border-top: 1px solid rgba(25, 233, 233, 0.99);
+    
+    font-family: 'Arvo', sans-serif;
+}
+.social-icon-bar {
+
+    z-index: 99;
+    display: flex;
+}
+
+
+.social-icon-bar a {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin:2px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+
+}
+
+/* Style the social media icons with color no cookie cutter */
+
+
+
+
+.facebook,
+.twitter,
+.youtube,
+.google {
+    background: #000;
+    color: white;
+}
+
+.facebook:hover,
+.twitter:hover,
+.youtube:hover,
+.google:hover {
+    background: #fff;
+    color: #000;
+}
